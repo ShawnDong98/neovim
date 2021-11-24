@@ -1,3 +1,4 @@
+
 " Plugins will be downloaded under the specified directory.
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
@@ -33,4 +34,6 @@ set shiftwidth=2
 set softtabstop=2
 " 设置c风格的tab键
 set cindent
+"自动保存
+set autowriteall
 
