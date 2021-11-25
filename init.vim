@@ -37,3 +37,4 @@ set cindent
 "自动保存
 set autowriteall
 
+set pastetoggle=<F9>
