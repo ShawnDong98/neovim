@@ -39,5 +39,12 @@ set autowriteall
 
 " 按F9之后复制粘贴不会乱板
 set pastetoggle=<F9>
+
 " 自动打开NERDTree
 autocmd VimEnter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" 配置TagBar
+nmap <F8> :TagbarToggle<CR>
+" 启动时自动focus
+let g:tagbar_autofocus = 1
