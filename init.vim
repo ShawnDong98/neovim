@@ -15,10 +15,13 @@ Plug 'tpope/vim-surround'
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'kevinhwang91/rnvimr'
 Plug 'github/copilot.vim'
+Plug 'flazz/vim-colorschemes'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
+" 更改主题
+colorscheme evening
 
 syntax on
 " 显示行号
