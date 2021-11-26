@@ -53,5 +53,3 @@ nnoremap  i   k
 nnoremap  k  j
 nnoremap  j   h
 
-" 修改切换窗口的快捷键
-map <C-BS> <c-w><c-w>          
