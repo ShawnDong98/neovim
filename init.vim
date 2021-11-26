@@ -48,8 +48,3 @@ nmap <F8> :TagbarToggle<CR>
 " 启动时自动focus
 let g:tagbar_autofocus = 1
 
-" 修改上下左右映射
-nnoremap  i   k
-nnoremap  k  j
-nnoremap  j   h
-
