@@ -1,4 +1,3 @@
-
 " Plugins will be downloaded under the specified directory.
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
@@ -48,3 +47,11 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 nmap <F8> :TagbarToggle<CR>
 " 启动时自动focus
 let g:tagbar_autofocus = 1
+
+" 修改上下左右映射
+nnoremap  i   k
+nnoremap  k  j
+nnoremap  j   h
+
+" 修改切换窗口的快捷键
+map <C-BS> <c-w><c-w>          
