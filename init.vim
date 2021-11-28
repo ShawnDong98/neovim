@@ -26,10 +26,6 @@ colorscheme evening
 syntax on
 " 显示行号
 set number
-" 一面输入一面高亮
-" set incsearch
-" 搜索高亮
-" set hlsearch
 " 每一级缩进的长度
 set shiftwidth=2
 " 在编辑模式的时候按退格键的时候退回缩进的长度
@@ -40,10 +36,13 @@ set cindent
 set autowriteall
 
 " 按F9之后复制粘贴不会乱板
-set pastetoggle=<F9>
+set pastetoggle=<F9> 
+" 编辑到60字符后自动折行
+set textwidth=60
 
 " 自动打开NERDTree
-autocmd VimEnter * NERDTree
+" autocmd VimEnter * NERDTree
+nmap <F7> :NERDTree<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " 配置TagBar
