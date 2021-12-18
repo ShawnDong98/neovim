@@ -37,8 +37,6 @@ set autowriteall
 
 " 按F9之后复制粘贴不会乱板
 set pastetoggle=<F9> 
-" 编辑到60字符后自动折行
-set textwidth=60
 
 " 自动打开NERDTree
 " autocmd VimEnter * NERDTree
